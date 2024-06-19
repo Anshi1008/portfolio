@@ -1,0 +1,522 @@
+
+*{
+    color: white;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+body{
+    background-color: #010e24;
+    background-image: linear-gradient(to right,  #010e24, rgb(46, 10, 91));
+    
+    justify-content: center;
+    align-items: center;
+
+
+}
+header{
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+}
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    height: 9.5vh;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #131313;
+
+}
+.left{
+    font-size: 1.6rem;
+    cursor: default;
+    font-weight: 400;
+    color: #ffffff;
+    opacity:0;
+    animation:slideRight 1s ease forwards;
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 12px;
+
+}
+nav ul li{
+    list-style: none;
+    margin: 0 25px;
+    list-style: none;
+    text-decoration: none;
+    font-weight: 200;
+
+}
+nav ul li a{
+    display: inline-block;
+    text-decoration: none;
+    list-style: none;
+    transition: .3s;
+    opacity: 0;
+    animation: slideTop .5s ease forwards;
+    animation-delay: calc(.2s * var(--i));
+}
+nav ul li a:hover{
+    color: rgb(194, 45, 220);
+    /* font-size: 1.01rem; */
+}
+
+
+.container{
+  
+    margin: auto;
+    /* border: 2px solid white; */
+    box-sizing: content-box;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    padding: 50px;
+    margin-bottom: 40px;
+    border-radius:10px;
+
+    height: 90vh;
+    /* height: fit-content; */
+
+
+}
+
+#contact{
+    height: fit-content;
+}
+/* .container > div{ /*first div ko hi width 32 mile taki text alignment sahi rahe*/
+  
+    /* align-items: center; */
+/* } */ 
+.container .buttons a{
+    text-decoration: none;
+
+}
+#home{
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+  
+
+}
+.leftSection{
+    /* background-color: red; */
+    font-size: 2.5rem;
+    text-align: center;
+    /* margin: 25px 0px; */
+}
+.leftSection p{
+    opacity: 0;
+    animation: slideBottom 1s ease forwards;
+    animation-delay: 0.7s;
+}
+.leftSection .secondPara{
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+    animation-delay: 0.7s;
+}
+#home span{
+    display: inline-block;
+    opacity:0;
+    animation:slideRight 1s ease forwards;
+    animation-delay: 1.2s;
+}
+#home  #element{
+    
+    opacity:0;
+    animation:slideLeft 1s ease forwards;
+    animation-delay: 1.2s;
+}
+.leftSection .name{
+    color: #b377eb;
+    font-weight: 500;
+    font-size: 3.1rem;
+    
+}
+.leftSection .buttons{
+    padding: 15px;
+    display:flex;
+    justify-content:space-evenly;
+    align-items: center;
+    gap:20px;
+   
+
+}
+.leftSection .btn{
+    padding: 5px 10px;
+    border: 2px solid white;
+    background-color: #4a378d29;
+    border-radius: 5px;
+    cursor: pointer;
+    height: fit-content;
+    font-family: 'Poppins';
+    min-width:150px;
+    opacity:0;
+    animation:slideTop 1s ease forwards;
+    animation-delay: calc(.2s * var(--i));
+}
+.leftSection .btn:hover{
+    background-color: #8169d7;
+    /* font-size: 1.008rem; */
+}
+.rightSection{
+    height: fit-content;
+}
+.rightSection img{
+    /* background-color: red; */
+    width: 50%;
+    border-radius: 120px;
+ 
+    box-shadow: 55px red;
+    position: relative;
+    bottom: 32px;
+
+    opacity:0;
+    animation:zoomIn 1s ease forwards;
+    animation-delay: 1s;
+}
+
+#home{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+  
+}
+#about .top{
+    text-align: center;
+    opacity: 0;
+    animation: slideBottom 1s ease forwards;
+    animation-delay: 0.7s;
+}
+#about .p1 {
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+    animation-delay: 0.7s;
+    text-align: center;
+    font-size: x-large;
+    /* font-family: cursive; */
+    padding: 50px;
+}
+#about .p2{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+    animation-delay: 1.5s;
+}
+#about .resume{
+    align-items: start;
+    background-color:#4a378d29;
+    box-shadow: 0 0 5px cyan, 0 0 45px#00ff8e;
+    border-radius: 4px;
+    font-size: large;
+    margin-top: 30px;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: 1.7s;
+    
+}
+#about .resume:hover{
+    cursor: pointer;
+    font-size: 1.015rem;
+    background-color: rgb(119, 101, 172)
+    
+
+}
+#education .top {
+    text-align: center;
+    width: 100%;
+    opacity: 0;
+    animation: slideBottom 1s ease forwards;
+    animation-delay: 0.7s;
+  
+}
+#education .top .h1 {
+    text-align: center;
+   
+  
+}
+#education .dabba{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#education .leftblock{
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+    animation-delay: 0.7s;
+}
+#education .rightblock{
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: 0.7s;
+}
+#education .leftblock,.rightblock{
+    z-index: -1;
+    border: 2px solid black;
+    background-color: #4a378d29;
+    width: 380px;
+    text-align: center;
+}
+
+
+#education img{
+    height: 300px;
+    width: 370px;
+    
+}
+#skills .badabox{
+    display: flex;
+    justify-content:center;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+    height: fit-content;
+    /* border: 2px solid red; */
+}
+#skills .top{
+    z-index: 1;
+    margin-top: 15px;
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+    opacity: 0;
+    animation: slideBottom 1s ease forwards;
+}
+#skills .chotabox{
+    border: 2px solid black;
+    background-color: #4a378d29;
+    margin: 20px;
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+    animation-delay: calc(.2s * var(--i));
+
+    
+}
+#skills .chotabox img{
+    height: 100px;
+    width: 135px;
+    margin:10px 15px 10px 15px;
+
+}
+#skills .chotabox h2{
+    text-align: center;
+    text-decoration: dashed;
+}
+#contact{
+    display: flexbox;
+}
+#contact .name, .center{
+    font-style: italic;
+    font-weight: 500;
+    font-size: 1.5rem;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+}
+#contact img{
+    height: 25px;
+    width: 25px;
+    margin: 0px 10px;
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+}
+#contact .right .contact_no, .mail{
+    align-items: center;
+    margin:0px 50px;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+}
+
+#contact .right{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+#contact{
+    display: flex;
+    justify-content: space-around;
+    background-color: #131313;
+    align-items: center;
+}
+/*
+footer .foot .center{
+    text-align: center;
+}
+footer .foot .right{
+    text-align: center;
+} */
+@media (max-width:960px){
+    .container{
+        height: fit-content;
+    }
+}
+@media (max-width:860px){
+    #home{
+        flex-direction: column-reverse;
+
+    }
+    #home .leftSection{
+        font-size: 2em;
+
+    }
+    #home .rightSection {
+        height: fit-content;
+        align-items: center;
+    }
+    #home .buttons .btn a{
+        font-size: 1.5em;
+    }
+    #about .p1 {
+        padding: 0px;
+        font-size: medium;
+    }
+
+    #contact .name, .center{
+        font-size: 0.7rem;
+    }
+   
+    
+}
+@media (max-width:500px){
+    .navbar .right{
+        display: none;
+    }
+    #contact .center{
+        display: none;
+    }
+   
+  
+#education img{
+    height: 150px;
+    width: 185px;
+    
+}
+#education .leftblock,.rightblock{
+    width: 185px;
+
+}
+#education .description, h2{
+    font-size: 1rem;
+    
+}
+#skills .chotabox img{
+    height: 55px;
+    width: 65px;
+    margin:4px 10px ;
+
+}
+.buttons{
+    flex-direction: column;
+}
+#contact .right .handles{
+    width: 100%;
+    align-items: center;
+    margin: auto;
+}   
+#contact .right {
+    text-align: center;
+
+}   
+#contact .right .contact_no{
+    width: 100%;
+    align-items: center;
+    margin: auto;
+
+}   
+#contact .right .mail{
+    width: 100%;
+    align-items: center;
+    margin: auto;
+
+}   
+
+
+}
+@media (max-width:300px){
+    #contact .name{
+        display: none;
+    }
+    #about p{
+        font-size: 0.8rem;
+    }
+    #education h1{
+        font-size: 1rem;
+    }
+    #education img{
+        height: 80px;
+        width: 95px;
+        
+    }
+    #education .leftblock,.rightblock{
+        width: 95px;
+    
+    }
+
+}
+
+
+
+@keyframes slideRight{
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes slideLeft{
+    0%{
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+@keyframes slideTop{
+    0%{
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideBottom{
+    0%{
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes zoomIn{
+    0%{
+        transform: scale(0);
+        opacity: 0;
+    }
+    100%{
+        transform:scale(1);
+        opacity: 1;
+    }
+}
